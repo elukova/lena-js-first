@@ -1,0 +1,16 @@
+<script>
+    var number = 1, divider = 2, primeNumbers = [];
+    while (number <= 100) {
+        while (divider < number) {
+            if (number % divider == 0) {
+                number++;
+                divider = 2;
+            }
+            else { divider++; }
+        }
+        if (number <= 100) primeNumbers.push(number);
+        number++;
+        divider = 2;
+    }
+    document.write(primeNumbers);
+</script>

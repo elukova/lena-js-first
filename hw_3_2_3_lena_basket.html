@@ -1,0 +1,29 @@
+<script>
+
+    var basket = [
+        {
+            title: "Товар 1",
+            price: 100,
+            quantity: 2,
+        },
+        {
+            title: "Товар 2",
+            price: 200,
+            quantity: 3,
+        },
+        {
+            title: "Товар 3",
+            price: 300,
+            quantity: 4,
+        }
+    ]
+
+    function countBasketPrice(mas) {
+        var sum = 0;
+        for (var item of basket) { sum += item.quantity * item.price };
+        return (sum);
+    }
+
+    console.log('Стоимость товаров в корзине: ' + countBasketPrice(basket) + ' у.е.')
+
+</script>
