@@ -1,0 +1,16 @@
+<script>
+    function convertNumToObj() {
+        var obj3rank = {};
+        var setOfNum = (prompt('Введите трёхзначное число от 0 до 999:').split(''));
+        if (setOfNum.length > 3) {
+            console.log('Число больше, чем 999!');
+        }
+        else {
+            obj3rank.hundreds = +(setOfNum[0]);
+            obj3rank.tens = +(setOfNum[1]);
+            obj3rank.units = +(setOfNum[2]);
+        }
+        return obj3rank;
+    }
+    console.log(convertNumToObj());
+</script>
