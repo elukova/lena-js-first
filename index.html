@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>hw_6_pictures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="small">
+            <img id="spa" src="img\small\spa.jpg" alt="spa picture" onclick="f(this.id)">
+            <img id="sunset" src="img\small\sunset.jpg" alt="sunset picture" onclick="f(this.id)">
+            <img id="village" src="img\small\village.jpg" alt="village picture" onclick="f(this.id)">
+        </div>
+        <div class="big">
+            <img id="big" src="" alt="big picture" onerror=imageError()>
+        </div>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+
+</html>
